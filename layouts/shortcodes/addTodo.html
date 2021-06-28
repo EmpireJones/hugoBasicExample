@@ -1,0 +1,3 @@
+{{- $value := trim (.Inner | markdownify | plainify) " " -}}
+{{- .Page.Scratch.Add "todoList" (slice ( $value )) -}}
+<code>Wrote "{{ $value }}" to scratch...</code>

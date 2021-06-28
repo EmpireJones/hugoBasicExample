@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h1>Todo todoList</h1>
+{{ partial "fancy-header.html" . }}
+
+{{ .Content }}  
+
+{{ partial "todo-summary.html" . }}
+
+
+{{ end }}

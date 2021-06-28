@@ -17,6 +17,27 @@ theme = "vanilla-bootstrap-hugo-theme"
     url = "/about/"
     weight = 10
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      # definitionList = true
+      # footnote = true
+      # linkify = true
+      # strikethrough = true
+      # table = true
+      # taskList = true
+      # typographer = false
+    [markup.goldmark.parser]
+      # autoHeadingID = true
+      # autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+      # block = true
+      # title = true
+    [markup.goldmark.renderer]
+      # hardWraps = false
+      unsafe = true
+      # xhtml = false
+
 [taxonomies]
 category = "categories"
 tag = "tags"

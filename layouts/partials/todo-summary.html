@@ -1,0 +1,6 @@
+<h2>Todo list summary:</h2>
+<ul>
+{{- range $todoItem := .Page.Scratch.Get "todoList" -}}
+<li>{{$todoItem}}</li>
+{{- end -}}
+</ul>
